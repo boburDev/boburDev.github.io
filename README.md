@@ -1,2 +1,0 @@
-# boburDev.github.io
- portfolio

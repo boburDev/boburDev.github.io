@@ -1,0 +1,470 @@
+  html {
+  	box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+  	box-sizing: inherit;
+  }
+  body{
+  	margin: 0;
+  	padding: 0;
+    font-family: 'Poppins', 'Arial', sans-serif;
+  }
+  .container{
+  	max-width: 1100px;
+  	padding: 0 10px;
+  	margin: 0 auto;	
+  }
+  .header{
+  	position: fixed;
+  	z-index: 19;
+  	width: 100%;
+  	background-color: #343a40;
+  }
+  .navbar{
+  	height: 70px;
+  	padding: 0 20px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  }
+  .logo_link{
+  	text-decoration: none;
+  	color:#fff;
+  }
+  .navbar-toggler{
+    display: none;
+  }
+  .navbar_list{
+  	display: flex;
+  	list-style-type: none;
+  }
+  .navbar_item a{
+  	text-decoration: none;
+  	color:#999;
+  	margin: 10px;
+  }
+  .navbar_item a:hover{
+  	color:#fff;
+  }
+  .user_section{
+  	padding: 154px 0;	
+  	background-image: url("../img/working place.jpg");
+  	background-size: 2000px;
+  	background-position: center	top;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  }
+  .user_section::after{
+  	position: absolute;
+  	top: 70px;
+  	left: 0;	
+  	height: 645px;
+  	width: 100%;
+  	z-index: 0;
+  	background-color: rgba(0,0,0,0.5);
+  	content: ""; 	
+  }
+  .user_data{
+  	position: relative;
+  	z-index: 12;
+  }
+  .user_name{
+  	width: 600px;
+  	margin: 0 auto;
+  	text-align: center;
+  	font-size: 80px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	background: linear-gradient(to left, #9E9E9E, #F5F5F5);
+  	background-clip: border-box;
+  	-webkit-background-clip:text;
+  	-webkit-text-fill-color:transparent;
+  }
+  .user_stack{
+  	width: 500px;
+  	margin: 0 auto;
+  	margin-bottom: 45px;
+  	font-size: 36px;
+  	color:#fff;
+  	text-align: center;
+  }
+  .user_name:hover{
+  	background: -webkit-gradient(linear, right top, left top, from(#9E9E9E), to(#03A9F4));
+  	background: linear-gradient(to left, #9E9E9E, #03A9F4)
+  	background-clip: border-box;
+  	-webkit-background-clip:text;
+  	-webkit-text-fill-color:transparent;
+  }
+  .user_resume{
+  	display: flex;
+  	margin: 0 auto;
+  	justify-content: center;
+  	font-size: 18px;	
+  	font-weight: bold;
+  	width: 230px;
+  	border-radius: 50px;
+  	border: 2px solid #fff;
+  	margin-top: 50px;
+  	padding: 15px;
+  	text-decoration: none;
+  	color:#fff;
+  }
+  .user_resume:hover{
+  	background-color: #fff;
+  	color:#222;
+  }
+  .about_section{
+  	background-color: #fff;
+  }	
+  .about_user{
+  	display: flex;
+  	align-items: center;
+  	padding: 100px 20px;	
+  }
+  .about_title{
+  	width: 33%;
+  }
+  .about_title h2 {
+  	font-weight: 400;
+  	font-size: 32px;
+  }
+  .about_text{
+  	width: 66%;
+  	text-align: justify;
+  	color: #74808a;
+  }
+  .education_section{
+  	position: relative;
+  	padding: 50px 20px;
+  	background-image: url("../img/apple product.jpg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center bottom;
+  	background-attachment: fixed;
+  }
+  .education::after{
+  	position: absolute;
+  	top: 0px;
+  	left: 0;	
+  	height: 430px;
+  	width: 100%;
+  	z-index: 0;
+  	background-color: rgba(0,0,0,0.5);
+  	content: ""; 	
+  }
+  .education_title{
+  	position: relative;
+  	z-index: 9;
+  	margin: 0 auto;
+  	text-align: center;
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 30px;
+  }
+  .edu_box{
+  	position: relative;
+  	z-index: 10;
+  	width: 600px;
+  	margin: 20px auto;
+  	border-radius: 5px;
+  	background-color: #F0F0F0;
+  }
+  .box_data{
+  	padding: 15px;
+  	display: flex;
+  	justify-content: space-between;
+  	background-color: rgba(0,0,0,.03);
+  	border-bottom: 1px solid #999;
+  }
+  .edu_type{
+  	padding: 15px;
+  }
+  .projects_secion{
+  	padding: 20px 0;
+  	background-image: url("../img/notebook.jpg");
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-size: 2000px;
+  }
+  .project_title{
+  	text-align: center;
+  	font-size: 36px;
+  	margin: 0;
+  	color:#fff;
+  	text-transform: uppercase;
+  }
+  .project_list{
+  	display: flex;
+  	flex-wrap: wrap;
+  	list-style-type: none;
+  	padding: 0;
+  	margin-left: -30px;
+  }
+  .project_item{
+    position: relative;
+    width: 500px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: #d9d9d9
+  }
+  .project_text{
+    color:#fff;
+  }
+  .project_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 295px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;    
+    color:#fff;
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    font-family: 'Sacramento', cursive;
+  }
+  .project_link:hover{
+    opacity: 1;
+  }
+  .project_link:focus{
+    color: tomato;
+  }
+  .project_view{
+    width: 500px;
+    height: 295px;
+    overflow: hidden;
+  }
+  .footer_section{
+    background-image: url("../img/galaxy.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .footer_data{
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;	
+  	padding: 10px 0;
+  }
+  .autor{
+  	color:#fff;
+  }
+  .footer_list{
+  	display: flex;
+  	list-style-type: none;
+  }
+  .footer_item{
+  	margin-left: 20px;
+  }
+  .footer-icon{
+  	color:#fff;
+  }
+  @media(max-width: 1024px){
+    .container{
+      max-width: 950px;
+    }
+    .project_item{
+      width: 400px;
+    }
+    .project_view{
+      width: 400px;
+    }
+  }
+  @media(max-width: 768px){
+    .container{
+      max-width: 700px;
+    }
+    .user_section{
+      padding: 154px 0; 
+      background-image: url("../img/working place.jpg");
+      background-size: cover;
+    }
+    .user_section::after{
+      height: 550px;
+    }
+    .user_name{
+      width: 400px;
+      font-size: 50px;
+    }
+    .user_stack{
+      width: 400px;
+      font-size: 30px;
+    }
+    .project_item{
+      width: 300px;
+    }
+    .project_view{
+      width: 300px;
+    }
+  }
+  @media(max-width: 425px){
+    .container{
+      max-width: 380px;
+    }
+    .navbar{
+      margin-top: 10px;
+      padding: 5px 0 10px;
+      flex-direction: column;
+      height: auto;
+    }
+    .navbar-toggler{
+      display: block;
+      margin-left: auto  ;
+    }
+    .lines-button{
+      display: block;
+      width: 25px;
+      height: 1px;
+      background-color: #000;
+    }
+    .lines-buttonn{
+      display: block;
+      width: 25px;
+      height: 1px;
+      padding-top: -5px;
+      margin-top: 2px;
+      background-color: #000;
+    }
+    .navbar-div{
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+    }
+    .navbar_list{ 
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar--open{
+      display: block;
+    }
+    .navbar_item {
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+    .user_section{
+      background-size: cover;
+    }
+    .user_section::after{
+      height: 480px;
+      top: 65px;
+    }
+    .user_name{
+      width: 350px;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+    .user_stack{
+      width: 350px;
+      font-size: 22px;
+    }
+    .user_resume{
+      margin: 0 auto;
+      font-size: 16px;  
+      font-weight: bold;
+      width: 200px;
+      padding: 10px;
+    }
+    .about_user{
+      flex-direction: column;
+    }
+    .about_title,.about_text{
+      width: 100%;
+      text-align: center;
+    }
+    .education_section{
+      background-size: 1000px;
+    }  
+    .education::after{
+      height: 440px;
+    }
+    .education_title{
+      font-size: 24px;
+    }
+    .edu_box{
+      width: 350px;
+      text-align: center;
+    }
+    .box_data{
+      justify-content: center;  
+    }
+    .edu_data{
+      display: none;
+    }
+    .projects_secion{
+      background-position: center;
+      background-size: 2000px;
+    }
+    .project_title{
+      font-size: 24px;
+    }
+    .project_item{
+      width: 350px;
+    }
+    .project_view{
+      width: 350px;
+    }
+    .project_link{
+      height: 170px;
+    }
+    .footer_data{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer_list{
+      margin-left: -20px;
+      padding: 0;
+    }
+  }
+  @media(max-width: 320px){
+    .container{
+      max-width: 300px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .user_section::after{
+      height: 460px;
+    }
+    .user_name{
+      width: 280px;
+      font-size: 28px;
+    }
+    .user_stack{
+      width: 280px;
+      font-size: 22px;
+    }
+    .education_section{
+      background-size: 500px;
+    }  
+    .education::after{
+      height: 470px;
+    }
+    .edu_box{
+      width: 280px;
+    }
+    .projects_secion{
+      background-size: 1000px;
+    }
+    .project_item{
+      width: 280px;
+    }
+    .project_view{
+      width: 280px;
+    }
+    .project_link{
+      height: 137px;
+    }
+    .autor{
+      font-size: 14px;
+    }
+  }
