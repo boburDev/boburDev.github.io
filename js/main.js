@@ -4,7 +4,7 @@
   });
   
   let scroll = new SmoothScroll('a[href*="#"]');
-
+ 
   let openNavButtonElement = document.querySelector('.navbar-toggler')
   let navListElement = document.querySelector('.navbar_list')
  
