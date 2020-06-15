@@ -1,4 +1,4 @@
-  AOS.init({
+   AOS.init({
   	once: true,
   	delay: 500,
   });

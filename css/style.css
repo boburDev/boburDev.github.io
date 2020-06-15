@@ -415,7 +415,8 @@
       width: 350px;
     }
     .project_link{
-      height: 170px;
+      height: 295px;
+      opacity: 1;
     }
     .footer_data{
       display: flex;
