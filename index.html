@@ -1,79 +1,91 @@
          <!DOCTYPE html>
-    <html lang="en">
-    <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sacramento&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="css/font awesome/fa/css/all.min.css">
-     <link rel="stylesheet" href="css/style.css">
-     <title>Boburmirzo</title>
-   </head>
-   <body id="page-top">
-     <header class="header">
-      <div class="container">
-       <nav class="navbar">
-         <div class="navbar-div">
-          <a class="logo_link" href="">Negmatov Boburmirzo</a>
-          <button class="navbar-toggler" type="button">
-            <span class="lines-button"></span>
-            <span class="lines-buttonn"></span>
-            <span class="lines-buttonn"></span>
-          </button>
+         <html lang="en">
+         <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta http-equiv="X-UA-Compatible" content="ie=edge">
+           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sacramento&display=swap" rel="stylesheet">
+           <link rel="stylesheet" href="css/font awesome/fa/css/all.min.css">
+           <link rel="stylesheet" href="css/style.css">
+           <title>Boburmirzo</title>
+           <style>
+             .ananas{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: 10000;
+             }
+             .ananas--none{
+              display: none;
+             }
+           </style>
+         </head>
+         <body id="page-top">
+          <img class="ananas" id="ananas" src="img/car-marka.jpg" alt="">
+          <header class="header">
+            <div class="container">
+             <nav class="navbar">
+               <div class="navbar-div">
+                <a class="logo_link" href="">Negmatov Boburmirzo</a>
+                <button class="navbar-toggler" type="button">
+                  <span class="lines-button"></span>
+                  <span class="lines-buttonn"></span>
+                  <span class="lines-buttonn"></span>
+                </button>
+              </div>
+              <div class="navbar-collapse">
+                <ul class="navbar_list">
+                 <li class="navbar_item" onclick="removeClass()"><a href="#page-top">Home</a></li>
+                 <li class="navbar_item"onclick="removeClass()"><a href="#abour">About</a></li>
+                 <li class="navbar_item"onclick="removeClass()"><a href="#education">Education</a></li>
+                 <li class="navbar_item"onclick="removeClass()"><a href="#project">Projects</a></li>
+                 <li class="navbar_item"onclick="removeClass()"><a href="#contact">Contact</a></li>
+               </ul>
+             </div>
+           </nav>
+         </div>
+       </header>
+
+       <section class="user_section">
+        <div class="container">
+         <div class="user_data">
+          <h2 class="user_name">Negmatov Boburmirzo</h2>
         </div>
-        <div class="navbar-collapse">
-          <ul class="navbar_list">
-           <li class="navbar_item" onclick="removeClass()"><a href="#page-top">Home</a></li>
-           <li class="navbar_item"onclick="removeClass()"><a href="#abour">About</a></li>
-           <li class="navbar_item"onclick="removeClass()"><a href="#education">Education</a></li>
-           <li class="navbar_item"onclick="removeClass()"><a href="#project">Projects</a></li>
-           <li class="navbar_item"onclick="removeClass()"><a href="#contact">Contact</a></li>
-         </ul>
-       </div>
-     </nav>
-   </div>
- </header>
+        <div class="user_data">
+          <h3 class="user_stack">Fullstack Developer</h3>
+          <a href="docs/BoburmirzoResumeEn.pdf" class="user_resume">DOWNLOAD RESUME</a>
+        </div>
+      </div>
+    </section>
 
- <section class="user_section">
-  <div class="container">
-   <div class="user_data">
-    <h2 class="user_name">Negmatov Boburmirzo</h2>
-  </div>
-  <div class="user_data">
-    <h3 class="user_stack">Fullstack Developer</h3>
-    <a href="docs/BoburmirzoResumeEn.pdf" class="user_resume">DOWNLOAD RESUME</a>
-  </div>
-</div>
-</section>
+    <section id="abour" class="about_section">
+      <div class="container">
+       <div class="about_user">
+        <div class="about_title"><h2>About myself</h2></div>
+        <div class="about_text"><p>Hi my name is Bobur. I find out by creating sites. Weekly, I work freely with the usual programmers (eg Sass, jQuery, Gulp, Git). I can add different dynamic effects to sites in JavaScript fields. I can review cases that I can handle each time.</p></div>
+      </div>
+    </div>
+  </section>
 
-<section id="abour" class="about_section">
-  <div class="container">
-   <div class="about_user">
-    <div class="about_title"><h2>About myself</h2></div>
-    <div class="about_text"><p>Hi my name is Bobur. I find out by creating sites. Weekly, I work freely with the usual programmers (eg Sass, jQuery, Gulp, Git). I can add different dynamic effects to sites in JavaScript fields. I can review cases that I can handle each time.</p></div>
-  </div>
-</div>
-</section>
-
-<section id="education" class="education_section">
-  <div class="container">
-   <h2 class="education_title">EDUCATION</h2>
-   <div class="education">
+  <section id="education" class="education_section">
+    <div class="container">
+     <h2 class="education_title">EDUCATION</h2>
+     <div class="education">
+      <div class="edu_box">
+       <div class="box_data">
+        <div class="edu_name">Najot ta`lim training center</div>
+        <div class="edu_data">December 2019 - February 2020</div>
+      </div>
+      <div class="edu_type">FullStack programmer</div>
+    </div>
     <div class="edu_box">
      <div class="box_data">
-      <div class="edu_name">Najot ta`lim training center</div>
-      <div class="edu_data">December 2019 - February 2020</div>
+      <div class="edu_name">INHA University In Tashkent</div>
+      <div class="edu_data">Septenber 2019 - May 2023</div>
     </div>
-    <div class="edu_type">FullStack programmer</div>
+    <div class="edu_type">Base on software and hardware programming</div>
   </div>
-  <div class="edu_box">
-   <div class="box_data">
-    <div class="edu_name">INHA University In Tashkent</div>
-    <div class="edu_data">Septenber 2019 - May 2023</div>
-  </div>
-  <div class="edu_type">Base on software and hardware programming</div>
-</div>
 </div>
 </div>
 </section>
@@ -82,27 +94,6 @@
   <div class="container">
    <h2 class="project_title">PROJECTS</h2>
    <ul class="project_list">
-    <!-- <li data-aos="flip-left" class="project_item">
-     <img src="img/Lazzat.jpg" alt="photo" class="project_view">
-     <h3 class="project_heading">Lazzat Menu</h3>
-     <p class="project_text">This project was created during my school years. It is my first webpage.</p>
-     <div class="elements">
-      <span class="badge"><i class="fab fa-html5 fa-2x" style="color: #ff5722;"></i></span>
-      <span class="badge"><i class="fab fa-css3 fa-2x" style="color: #2196f3;"></i></span>
-    </div>
-    <a class="project_link" target="blank"   href="https://boburdev.github.io/lazzat/">See More...</a>
-  </li> 
-    <li data-aos="flip-up" class="project_item">
-     <img src="img/AppleWatch.jpg" alt="photo" class="project_view">
-     <h3 class="project_heading">iWatch Page</h3>
-     <p class="project_text">I built iWatch page when i learned bootstrap and BEM</p>
-     <div class="elements">
-      <span class="badge"><i class="fab fa-html5 fa-2x" style="color: #ff5722;"></i></span>
-      <span class="badge"><i class="fab fa-css3 fa-2x" style="color: #2196f3;"></i></span>
-      <span class="badge"><i class="fab fa-bootstrap fa-2x" style="color: #4c50c4;"></i></span>
-    </div>
-    <a class="project_link" target="blank"   href="https://boburdev.github.io/iWatch/">See More...</a>
-  </li> -->
     <li data-aos="flip-down" class="project_item">
      <img src="img/AppLab.jpg" alt="photo" class="project_view">
      <h3 class="project_heading">App Advertisment</h3>
@@ -113,30 +104,28 @@
     </div>
     <a class="project_link" target="blank"   href="https://boburdev.github.io/App-Feature/">See More...</a>
   </li>
-    <li data-aos="flip-right" class="project_item">
-     <img src="img/Pokemons.jpg" alt="photo" class="project_view">
-     <h3 class="project_heading">Pokemons</h3>
-     <p class="project_text">In this page i used api for taking pics and data about pokemons when i learned JavaScript</p>
-     <div class="elements">
-      <span class="badge"><i class="fab fa-html5 fa-2x" style="color: #ff5722;"></i></span>
-      <span class="badge"><i class="fab fa-css3 fa-2x" style="color: #2196f3;"></i></span>
-      <!-- <span class="badge"><i class="fab fa-bootstrap fa-2x" style="color: #4c50c4;"></i></span> -->
-      <span class="badge"><i class="fab fa-js fa-2x" style="color: #ffc107;"></i></span>
-    </div>
-    <a class="project_link" target="blank"   href="https://boburdev.github.io/pokemons/">See More...</a>
-  </li> 
-    <li data-aos="flip-right" class="project_item">
-     <img src="img/registration.jpg" alt="photo" class="project_view">
-     <h3 class="project_heading">Registration</h3>
-     <p class="project_text">At the end of course i did it while this project i use JS, SVG pics and authorizetion view</p>
-     <div class="elements">
-      <span class="badge"><i class="fab fa-html5 fa-2x" style="color: #ff5722;"></i></span>
-      <span class="badge"><i class="fab fa-css3 fa-2x" style="color: #2196f3;"></i></span>
-      <!-- <span class="badge"><i class="fab fa-bootstrap fa-2x" style="color: #4c50c4;"></i></span> -->
-      <span class="badge"><i class="fab fa-js fa-2x" style="color: #ffc107;"></i></span>
-    </div>
-    <a class="project_link" target="blank"   href="https://boburdev.github.io/Registration/">See More...</a>
-  </li> 
+  <li data-aos="flip-right" class="project_item">
+   <img src="img/Pokemons.jpg" alt="photo" class="project_view">
+   <h3 class="project_heading">Pokemons</h3>
+   <p class="project_text">In this page i used api for taking pics and data about pokemons when i learned JavaScript</p>
+   <div class="elements">
+    <span class="badge"><i class="fab fa-html5 fa-2x" style="color: #ff5722;"></i></span>
+    <span class="badge"><i class="fab fa-css3 fa-2x" style="color: #2196f3;"></i></span>
+    <span class="badge"><i class="fab fa-js fa-2x" style="color: #ffc107;"></i></span>
+  </div>
+  <a class="project_link" target="blank"   href="https://boburdev.github.io/pokemons/">See More...</a>
+</li> 
+<li data-aos="flip-right" class="project_item">
+ <img src="img/registration.jpg" alt="photo" class="project_view">
+ <h3 class="project_heading">Registration</h3>
+ <p class="project_text">At the end of course i did it while this project i use JS, SVG pics and authorizetion view</p>
+ <div class="elements">
+  <span class="badge"><i class="fab fa-html5 fa-2x" style="color: #ff5722;"></i></span>
+  <span class="badge"><i class="fab fa-css3 fa-2x" style="color: #2196f3;"></i></span>
+  <span class="badge"><i class="fab fa-js fa-2x" style="color: #ffc107;"></i></span>
+</div>
+<a class="project_link" target="blank"   href="https://boburdev.github.io/Registration/">See More...</a>
+</li> 
 </ul>
 </div>
 </main>
@@ -158,6 +147,7 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="js/load.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
